@@ -12,6 +12,7 @@ scikit-learn = "*"
 seaborn = "*"
 tensorflow = "*"
 imblearn = "*"
+flask = "*"
 
 [dev-packages]
 ipykernel = "*"
