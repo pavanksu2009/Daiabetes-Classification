@@ -11,7 +11,7 @@ def predict_single(customer, model):
     return y_pred[0]
 
 
-app = Flask('Diabetes')
+app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def  predict():
@@ -29,7 +29,7 @@ def  predict():
     return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(debug=True, host= '0.0.0.0', port= 9696)
+    app.run(debug=True, host= '0.0.0.0', port= "8080")
     
     
     
